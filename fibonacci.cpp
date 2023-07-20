@@ -1,3 +1,5 @@
+//This program prints fibonacci series of next 's' numbers by taking first two numbers
+
 #include<iostream>
 using namespace std;
 
