@@ -1,3 +1,5 @@
+//to merge two sorted sorted arrays.
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -27,11 +29,5 @@ int main()
     for(int j =0; j < size ; j++ ){
     cout << temp[j]<< endl;
     }
-  
-        // cout << size<<"\n"<< a<<"\n"<<b <<endl;
-            // cout << count(a1);
-            // cout << size<<endl;
-
-
     return 0;
 }

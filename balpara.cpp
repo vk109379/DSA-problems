@@ -1,3 +1,5 @@
+//this program checks the given expression of parantheses are balanced or not.
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -23,17 +25,17 @@ int main()
             if(!str.empty()){
             
                 if(exp[i] == ')' && str.top() == '('  ){
-                        str.pop();
+                    str.pop();
                     flag -= 1;
                 }
 
                 else if(exp[i] == '}' && str.top() == '{'  ){
-                        str.pop();
+                    str.pop();
                     flag -= 1;
                 }
 
                 else if(  exp[i] == ']' && str.top() == '['){
-                        str.pop();
+                    str.pop();
                     flag -= 1;
                 }
             }
@@ -41,11 +43,8 @@ int main()
                 cout <<"Unbalanced Bruh!"<<endl;
                 flag = -2;
                 break;
-            }
-        
-        
-        }
-    
+            }        
+        } 
     }
     
     if (flag == 0){
