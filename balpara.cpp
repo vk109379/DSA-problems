@@ -1,4 +1,4 @@
-//this program checks the given expression of parantheses are balanced or not.
+//this program checks the given expression of parantheses is balanced or not.
 
 #include <bits/stdc++.h>
 
@@ -17,8 +17,6 @@ bool ispara(string x)
             
             str.push(x[i]);
         }
-        
-        //checking closed paranthesis
         
         else if(x[i] == ']' || x[i] == '}' || x[i] == ')' ){
             
