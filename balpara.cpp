@@ -4,53 +4,61 @@
 
 using namespace std;
 
-int main()
+bool ispara(string x)
 {
     stack<char> str;
-    string exp = "[{}()]{}";
-    int flag = 0, i, j;
     
-
-    for(i=0 ; i < exp.length() ; i++){
-        if(exp[i] == '[' || exp[i] == '{' || exp[i] == '(' ){
+    if (x.length() == 1){
+        return false;
+    }
+    
+    for(int i=0 ; i < x.length() ; i++){
+        if(x[i] == '[' || x[i] == '{' || x[i] == '(' ){
             
-            str.push(exp[i]);
-            flag += 1;
+            str.push(x[i]);
         }
         
         //checking closed paranthesis
         
-        else if(exp[i] == ']' || exp[i] == '}' || exp[i] == ')' ){
-
-            if(!str.empty()){
+        else if(x[i] == ']' || x[i] == '}' || x[i] == ')' ){
             
-                if(exp[i] == ')' && str.top() == '('  ){
-                    str.pop();
-                    flag -= 1;
+            if(!str.empty()){
+                
+                if(x[i] == ')' && str.top() != '('  ){
+                    return false;
                 }
-
-                else if(exp[i] == '}' && str.top() == '{'  ){
-                    str.pop();
-                    flag -= 1;
+                
+                else if(x[i] == '}' && str.top() != '{'  ){
+                    return false;
                 }
-
-                else if(  exp[i] == ']' && str.top() == '['){
-                    str.pop();
-                    flag -= 1;
-                }
+                
+                else if(x[i] == ']' && str.top() != '['){
+                    return false;
+                } 
+                
+                str.pop();
             }
-            else {
-                cout <<"Unbalanced Bruh!"<<endl;
-                flag = -2;
-                break;
-            }        
+            else if(str.empty()){
+                return false;
+            }
         } 
     }
+    if(str.empty()){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+
+int main(){
+    string x = "{}{(}))}";
     
-    if (flag == 0){
+    if (ispara(x)){
         cout<<"Balanced ! As all things should be in this Universe."<<endl;
     }
-    else if(flag != -2){
+    else {
         cout <<"Unbalanced Bruh!"<<endl;
     }
 
