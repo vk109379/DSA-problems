@@ -4,24 +4,27 @@ using namespace std;
  int main()
  {
     int num,len,n ,res;
-    int temp ;
+    int temp ,till;
 
-   for(num=1 ; num<=2000 ; num++){
-      len = 0;
-         n=num;
-         temp = num;
+    cout << "Enter the the no. till armstrong no. to be print : ";
+    cin >> till;
+   for(num = 1; num <= till; num++){
+        len = 0;
+        n=num;
+        temp = num;
         res=0;
-        while(n > 0){
+
+        while(n > 0){ // getting length of integer
             n = n/10;
             len += 1;
         }
-        while(temp > 0){
+        while(temp > 0){ 
             n= temp%10;
             res += pow(n, len) ;
             temp /= 10;
         }
         if(res == num){
-            cout << res << ", ";
+            cout << res << " ";
         }
     }
     cout << endl;
