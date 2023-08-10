@@ -30,14 +30,20 @@ class Solution{
 int main(void) 
 { 
 
-    int n, k;
-    cin >> n >> k;
-    
+    int n;
+    cout << "No. of elements in array : ";
+    cin >> n;
+
     int arr[n];
-    
-    for(int i = 0;i<n;i++){
-        cin >> arr[i];
+    cout << "Input elements in array : ";
+
+    for(int i = 0; i < n; i++){
+        cin>>arr[i];
     }
+
+    int k;
+    cout << "Element to be searched in array : ";
+    cin >> k;
     
     Solution ob;
     if(ob.searchInSorted(arr, n, k) == -1){
