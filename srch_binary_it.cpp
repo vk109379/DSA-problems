@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution{
     public:
-    int searchInSorted(int arr[], int N, int K) 
+    int Binary(int arr[], int N, int K) 
     { 
         int l = 0, h = N-1, mid;
         
@@ -46,11 +46,13 @@ int main(void)
     cin >> k;
     
     Solution ob;
-    if(ob.searchInSorted(arr, n, k) == -1){
+    int index = ob.Binary(arr, n ,k);
+
+    if(index == -1){
         cout << "Not found !" << endl;
     }
     else{
-        cout << "Found at index : " << ob.searchInSorted(arr, n, k) << endl;
+        cout << "Found at index : " << index << endl;
     }
     
 	return 0; 
