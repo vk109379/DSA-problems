@@ -1,11 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
-/* The function returns the index of any
-   peak element present in the array */
 
 class Solution
 {
     public:
+    /* This function determine whether there exists a pair of integers in 
+        the sorted array that adds up to a given target value */
+
     bool ispair(int arr[], int n, int sum)
     {
         int l = 0, h = n-1, temp;
