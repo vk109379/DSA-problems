@@ -1,11 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
-/* The function returns the index of any
-   peak element present in the array */
+
 
 class Solution
 {
     public:
+    /* The function returns the index of any
+   peak element present in the array */
+   
     int peakElement(int arr[], int n)
     {
         int l = 0, h = n-1, mid;
