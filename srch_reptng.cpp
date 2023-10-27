@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 /* This function returns the element which is repeating
-    more than one time in the given array 
+    twmore than one times in the given array 
 
     aux. space : O(N-2)
     time cmplxty : O(N)
