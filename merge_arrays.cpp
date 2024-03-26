@@ -6,28 +6,33 @@ using namespace std;
 
 int main()
 {
-    int a1[] = {2,4,5,10,19};
-    int a2[] = {2,3,4,9,11, 45,68};
-    int i ,a = 0, b = 0, la1, la2;
+    int a1[] = {1,2,3,4};
+    int a2[] = {1,2,3,4,5};
+    int i ,a = 0, b = 0;
 
-    
     int size = sizeof(a1)/sizeof(a1[0]) + sizeof(a2)/sizeof(a2[0]);
-
     int temp[size];
 
-    for(i = 0; i <= size; i++ ){
-
-        if(a1[a] < a2[b] || a1[a] == a2[b]){
+    for(i = 0; i < size; i++ ){
+        
+        if(a1[a] <= a2[b]){
             temp[i] = a1[a];
-            a += 1;
+            a++;
+            if(a == sizeof(a1)/sizeof(a1[0]))
+                   a1[a] = INT_MAX;
         }
-        else if(a2[b] < a1[a]){
+
+        else{ 
             temp[i] = a2[b];
-            b += 1;
+            b++;
+            if(b == sizeof(a2)/sizeof(a2[0]))
+                   a2[b] = INT_MAX;
         }
     }
+
     for(int j =0; j < size ; j++ ){
-    cout << temp[j]<< endl;
+        cout << temp[j]<< " ";
     }
+
     return 0;
 }
