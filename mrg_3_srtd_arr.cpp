@@ -47,7 +47,7 @@ int main()
     vector<int> C = {1,2,3,4,5,6};
     
     Solution obj;
-    vector<int>ans = obj.mergeThree(A, B, C);
+    vector <int> ans = obj.mergeThree(A, B, C);
     for(auto i: ans)cout << i << " ";
     cout << "\n";
    
