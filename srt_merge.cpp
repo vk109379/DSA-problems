@@ -57,7 +57,7 @@ void printArray(int arr[], int size)
 
 int main()
 {
-    int arr[] = { 9,3,7,5,2,1,4,8,12,78,45,53,35,61,54,35,39};     
+    int arr[] = {9,3,7,5,2,1,4,8,12,78,45,53,35,61,54,35,39};     
     int  n = sizeof(arr)/sizeof(arr[0]);
     int low = 0, high = n-1;
     
@@ -65,6 +65,6 @@ int main()
     ob.MergeSort(arr, low, high);
     
     printArray(arr, n);
-    
+     
     return 0;
 }
