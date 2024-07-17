@@ -18,7 +18,7 @@ public:
             
             else if(array[mid] < a){
                 swap(array[mid], array[low]);
-                low++;
+                low++;      
                 mid++;
             }
             else{
