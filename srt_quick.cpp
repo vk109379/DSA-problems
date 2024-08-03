@@ -4,7 +4,7 @@ using namespace std;
 class Solution{
     public:
     //Quick sort algorithm using hoare partioning method.
-    int partition(int arr[], int l, int h){
+    int partition(int arr[], int l, int h){ // Hoare partition
         int i = l-1, j = h+1;
         int pivot = arr[l];
         

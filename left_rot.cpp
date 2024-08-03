@@ -19,7 +19,7 @@ void lrotate(int arr[], int n, int d){
 int main() {
     int arr[] = {0, 1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9};
     int  n = sizeof(arr)/sizeof(arr[0]);
-    int d = 2;
+    int d = 2; // to rotate array by 2 places to left
      cin >> d ;
 
     lrotate(arr, n, d);

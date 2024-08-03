@@ -18,9 +18,12 @@ int main()
     int n;
         cin>>n; //input size of array
         vector<int> a(n); //declare vector of size n
+
         for(int i=0;i<n;i++)
             cin>>a[i]; //input elements of array
+
         sort(a.begin(),a.end());
+        
         Solution ob;
         ob.convertToWave(n, a);
 

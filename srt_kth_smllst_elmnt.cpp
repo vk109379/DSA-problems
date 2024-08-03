@@ -4,6 +4,7 @@ using namespace std;
 class Solution
 {
     public:
+    // Lomuto partition algorithm
     int partition(int arr[], int l, int h)
     {
         int i = l, j;
