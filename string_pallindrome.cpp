@@ -26,7 +26,7 @@ bool pallin(string str, int s, int e){
 
 int main() {
     
-string str = "oooo";
+string str = "oonmnoo";
 int len = str.size();
 
 

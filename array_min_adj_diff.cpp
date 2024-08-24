@@ -3,7 +3,7 @@ using namespace std;
 
 class Solution{
     public:
-    //Function to find minimum adjacent difference in a circular array.
+    //Function to find minimum adjacent difference in a circular array(let).
     int minAdjDiff(int arr[], int n){    
         int temp = 0 , min = arr[n-1] - arr[0] ;
         if (min < 0){

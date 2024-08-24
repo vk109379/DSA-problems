@@ -14,7 +14,7 @@ using namespace std;
         temp = num;
         res=0;
 
-        while(n > 0){ // getting length of integer
+        while(n > 0){   // getting length of integer
             n = n/10;
             len += 1;
         }

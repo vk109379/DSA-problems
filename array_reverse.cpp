@@ -3,15 +3,10 @@ using namespace std;
 
 void reverse(int arr[], int n){
     int i, j = n-1;
-    int mid;
-    for(i=0; i<n; i++){
-        if(j <= i){
-            break;
-        }
-        if(i < j){
-            swap(arr[i], arr[j]);
-            j--;
-        }
+
+    for(i = 0; i < j; i++){
+        swap(arr[i], arr[j]);
+        j--;
     }
 }
 int main() {

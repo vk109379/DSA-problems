@@ -8,16 +8,14 @@ void insertAtIndex(int arr[], int sizeOfArray, int index, int element)
             arr[i] = arr[i-1];
         }
         
-        arr[index] = element;
-        
+        arr[index] = element;  
     }
 
 int main()
 {
     int arr[5] = {1, 2, 3, 4, 5};
     int element = 5, sizeOfArray = 6, index = 4;
-    
-    
+
     insertAtIndex(arr, sizeOfArray, index, element);
     
     for(int i = 0; i < sizeOfArray; i++)

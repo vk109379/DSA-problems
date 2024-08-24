@@ -7,11 +7,11 @@ int distinctval(int arr[], int n){
     int i, ptr =1;
 
     for(i=1; i<n; i++){
-       
-           if(arr[i] != arr[ptr-1]){
-                arr[ptr] = arr[i] ;
-                ptr ++;
-            }        
+        
+        if(arr[i] != arr[ptr-1]){
+            arr[ptr] = arr[i] ;
+            ptr ++;
+        }        
     }
     return ptr;
 }
