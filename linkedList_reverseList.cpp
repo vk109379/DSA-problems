@@ -32,6 +32,7 @@ Node *inserAtBegin(Node * head, int value){
 
     return begin;
 }
+
 void printList(Node* node) {
     while (node != NULL) {
         cout << node->data << " ";
